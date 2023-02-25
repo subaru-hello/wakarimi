@@ -130,6 +130,23 @@ gender text)
 ,(105, 'サシャ', 168, 'F')
 , (106, 'コニー',  158, 'M');
 ```
+
+
+moviesテーブル
+```
+ create table movies (
+  movie_id    integer    primary key
+ , title       text       not null unique
+ );
+```
+
+```
+insert into movies (movie_id, title) values (93, '風の谷のナウシカ')
+, (94, '天空の城ラピュタ') , (95, 'となりのトトロ')
+, (96, '崖の上のポニョ')
+;
+```
+
 characters テーブル
 ```
  create table characters ( id integer primary key,
@@ -145,19 +162,4 @@ characters テーブル
  (405,95, 'さつき' , 'F'),
  (406, 95, 'メイ' , 'F'),
  (407, null, 'クラリス', 'F');
-```
-
-moviesテーブル
-```
- create table movies (
-  movie_id    integer    primary key
- , title       text       not null unique
- );
-```
-
-```
-insert into movies (movie_id, title) values (93, '風の谷のナウシカ')
-, (94, '天空の城ラピュタ') , (95, 'となりのトトロ')
-, (96, '崖の上のポニョ')
-;
 ```
