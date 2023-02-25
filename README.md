@@ -154,3 +154,10 @@ moviesテーブル
  , title       text       not null unique
  );
 ```
+
+```
+insert into movies (movie_id, title) values (93, '風の谷のナウシカ')
+, (94, '天空の城ラピュタ') , (95, 'となりのトトロ')
+, (96, '崖の上のポニョ')
+;
+```
