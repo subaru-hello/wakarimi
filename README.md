@@ -116,8 +116,13 @@ titan=> select * from titan1;
 titanテーブル
 ```
 create table titans(
+id integer primary key,
+name text not null unique,
+height integer,
+gender text)
+;
 
- insert into titan(id, name, height, gender)
+ insert into titans(id, name, height, gender)
  values (101, 'エレン', 170, 'M')
 , (102, 'ミカサ', 170, 'F') 
 , (103, 'アルミン', 163, 'M')
