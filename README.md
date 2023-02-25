@@ -63,12 +63,12 @@ es
 ### 5. テーブル作成(コマンドライン操作でsqlファイルを作成)
 ```
 # cat >> create-titan1.sql << EOF
-> create table titan1 (
-> id integer primary key,
-> name text not null unique,
-> age integer
-> )
-> EOF
+ create table titan1 (
+ id integer primary key,
+ name text not null unique,
+ age integer
+ )
+ EOF
 
 # cat create-titan1.sql 
 create table titan1 (
